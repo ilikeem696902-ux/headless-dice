@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Headless Dice • Lucky Roll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="lucky-overlay" id="luckyOverlay" aria-hidden="true"><span>🌈 1% LUCKY DICE INSTA WIN! 🌈</span></div>
+  <main class="app">
+    <header class="hero">
+      <div class="badge">THE HAUNTED ROLL</div>
+      <h1>HEADLESS <span>DICE.</span></h1>
+      <p class="sub">Four cursed dice. Six colors. A 1% chance to unlock Lucky Dice.</p>
+      <img class="horseman" src="horseman.webp" alt="Pixel-art headless horseman holding a glowing pumpkin">
+    </header>
+
+    <section class="dice-area">
+      <div class="section-label">ROLL YOUR FATE</div>
+      <div class="dice-grid" id="diceGrid"></div>
+      <div class="result" id="result">READY?</div>
+      <button id="roll">ROLL 4 DICE</button>
+      <div class="hint">6 colors • 16.67% chance per color • 1% Lucky Dice chance per roll</div>
+    </section>
+
+    <section class="colors">
+      <div class="color-title">AVAILABLE COLORS</div>
+      <div class="grid" id="colors"></div>
+    </section>
+
+    <section class="history">
+      <div class="color-title">ROLL HISTORY</div>
+      <div id="history" class="history-list"><span>No rolls yet.</span></div>
+    </section>
+    <footer>☠️ Keep rolling... if you dare.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
